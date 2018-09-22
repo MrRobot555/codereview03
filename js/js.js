@@ -8,27 +8,37 @@ function calculateInsurance(){
 	for (i = 0; i < arrId.length; i++){
 
 		var item = document.getElementById(arrId[i]);
-		valueContainer[item.id] = item.value;
+		valueContainer[i] = item.value;
 	}
 
-	var outputItem = document.getElementById("resultdisplay");
+	var textOut = document.getElementById("resultdisplay");
 	var result = 0;
-	age = Number(valueContainer.age);
-	horsepower = Number(valueContainer.horsepower);
-	
-	if(horsepower > 0 && age > 0){
-		if (valueContainer.country == "0") { // Austria 
+
+	age = Number(valueContainer[1]);
+	horsepower = Number(valueContainer[3]);
+
+	//document.write(valueContainer[0], valueContainer[1], valueContainer[2], valueContainer[3]);
+
+	if (valueContainer[0] && valueContainer[1] && valueContainer[2] && valueContainer[3]) {
+
+
+	if (horsepower > 0 && age > 0){
+
+		if (valueContainer[2] == "0") { // Austria 
 			result = (horsepower * 100) / (age + 50);
 		}
-		else if (valueContainer.country == "1") { // Hungary
+		else if (valueContainer[2] == "1") { // Hungary
 			result = (horsepower * 120) / (age + 100);
 		}
-		else if (valueContainer.country == "2") { // Greece
+		else if (valueContainer[2] == "2") { // Greece
 			result = (horsepower * 150) / (age + 3 + 150);
 		}
 	}
 	
-	outputItem.innerText = valueContainer.name + " your insurance costs " + Math.floor(result) + " €";
+	textOut.innerText = valueContainer[0] + " your insurance costs " + Math.floor(result) + " €";
+
+} else textOut.innerText = "Missing data!";
+
 
 }
 

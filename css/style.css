@@ -124,7 +124,7 @@ header {
 
 .resultcontainer p {
 
-  font-size: 32px;
+  font-size: 28px;
   color: green;
 }
 
@@ -183,7 +183,7 @@ header {
 }
 
 .boxes {
-    border-top: 1px solid black;
+    border-top: 3px solid black;
     width: 50%;
     height: 280px;
     padding: 20px;
@@ -216,23 +216,7 @@ footer {
     background-color: #171717; 
 }
 
-.bottomnav {
-    margin: 0;
-    padding: 6px 6px 6px 15px;
-    background-color: #171717;
-    color: white; 
-}
 
-.bottomnav ul {
-    margin: 0;
-    padding: 0; 
-}
-
-.bottomnav ul li {
-    display: inline-block;
-    margin: 0;
-    padding: 5px; 
-}
 
 .bottom {
     width: 100%;
@@ -245,9 +229,41 @@ footer {
 
 .bottom img {
     float: right; 
+    padding-right: 20px;
 }
 
 .bottom p {
     text-align: center;
     padding: 65px 0 0 0; 
+}
+
+.footernav {
+  background-color: #17171;
+  margin: auto;
+  padding: 6px 6px 6px 15px; 
+}
+
+
+.footernav ul {
+    margin: 0;
+    padding: 0; 
+}
+
+.footernav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 6px 0px 6px 0px;
+}
+
+.footernav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 1s;
+    padding: 6px 10px 6px 10px;
+}
+
+.footernav ul li a:hover {
+    background-color: #FFF3F3;
+    color: black; 
 }
