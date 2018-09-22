@@ -1,0 +1,253 @@
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: "Open Sans Condensed", sans-serif; 
+}
+
+header {
+  background-color: #FFF3F3;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; 
+}
+
+.headernav {
+  background-color: #8E1615;
+  margin: auto;
+  padding: 6px 6px 6px 15px; 
+}
+
+
+.headernav ul {
+    margin: 0;
+    padding: 0; 
+}
+
+.headernav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 6px 6px 6px 15px;
+}
+
+.headernav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    transition: 1s;
+    padding: 12px 6px 12px 15px;
+}
+
+.headernav ul li a:hover {
+    background-color: #FFF3F3;
+    color: black; 
+}
+
+#divbackimage {
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-position: center;
+    background-size: cover; 
+    background-image: url("../img/traffic-332857_1920.jpg");
+    background-repeat: no-repeat;
+}
+
+
+#divbacktext {
+    width: 100%;
+    height: 30px;
+    color: white;
+    font-size: 52px;
+    font-weight: bold;
+    padding: 40px 0 0 20px; }
+
+#semitransparent {
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    border: 1px solid black;
+    width: 90%;
+    height: 530px;
+    position: relative;
+    top: 35px;
+    margin-top: 10px;
+    padding: 5% 0; 
+}
+
+#semitransparent div {
+    text-align: center;
+    font-size: 52px;
+    font-weight: bold; 
+  }
+
+
+#semitransparent div div {
+    margin-top: 20px; 
+    width: 40%;
+    padding-top: 10px;
+    position: relative;
+
+}
+
+#semitransparent div div input {
+    width: 100%;
+    font-size: 25px; 
+}
+
+#semitransparent div div select {
+    width: 100%;
+    font-size: 25px; 
+}
+
+#formcontainer {
+    width: 85%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5%; 
+}
+
+.resultcontainer {
+
+  position: relative;
+  top: -20px;
+}
+
+.resultcontainer p {
+
+  font-size: 32px;
+  color: green;
+}
+
+#formcontainer .buttonholder {
+    width: 100%;
+}
+    
+#formcontainer .buttonholder button {
+    width: 30%;
+    height: 40px;
+    background-color: #339236;
+    color: white;
+    font-size: 28px;
+    border-radius: 10px; 
+}
+
+#formcontainer .buttonholder p {
+    color: #339236;
+    height: 32px; 
+}
+
+.inputcss {
+    position: absolute;
+    font-size: 23px;
+    bottom: 40px; 
+}
+
+.infotext {
+    width: 100%;
+    height: 200px;
+    background-color: #CECECE;
+    padding: 0;
+    margin: 0; 
+}
+
+
+.infotext div {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 0 0 0;
+    font-size: 22px; 
+}
+
+.offer {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.offer hr {
+    opacity: 0.1; 
+}
+
+.boxes {
+    border-top: 1px solid black;
+    width: 50%;
+    height: 280px;
+    padding: 20px;
+    margin: 0 60px;
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    line-height: 1.5; 
+}
+
+.boxes p {
+    margin: 0; 
+}
+
+.boxes ul {
+    list-style: none;
+    line-height: 1.9;
+    padding: 0; }
+
+.boxes ul span {
+    color: #92D4D6;
+}
+
+.title {
+    color: #3E3776;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+footer {
+    background-color: #171717; 
+}
+
+.bottomnav {
+    margin: 0;
+    padding: 6px 6px 6px 15px;
+    background-color: #171717;
+    color: white; 
+}
+
+.bottomnav ul {
+    margin: 0;
+    padding: 0; 
+}
+
+.bottomnav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 5px; 
+}
+
+.bottom {
+    width: 100%;
+    height: 100px;
+    background-color: #171717;
+    color: white;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.bottom img {
+    float: right; 
+}
+
+.bottom p {
+    text-align: center;
+    padding: 65px 0 0 0; 
+}
